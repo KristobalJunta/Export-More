@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     temp[0] = 0xa0;     //select the control register
     bcm2835_i2c_write(temp,1);
     temp[0] = 0x03;     //Power up the device
-       bcm2835_i2c_write(temp,1);
+    bcm2835_i2c_write(temp,1);
     bcm2835_delay(500);
 
     bcm2835_i2c_read(temp,1);
