@@ -31,11 +31,10 @@
 
 int main(int argc, char **argv)
 {
-
-    int i;
-
     if (!bcm2835_init())
         return 1;
+
+    int i;
 
     // Set the pins to be an output
     bcm2835_gpio_fsel(PIN0, BCM2835_GPIO_FSEL_OUTP);
